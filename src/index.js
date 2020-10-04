@@ -2,9 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 function HelloWorld(){
-    return (
-    <div><Hello/> <World/>!</div> //--> A component must return a single element. A component can have multiple components in itself.
-    );
+    return [<Hello/>, <World/>, "!"];
+     //--> A component can return an array too. After all it is JS in JSX.
+
 
     // return React.createElement('div', {}, "Hello", " ", "World","!");
 }
