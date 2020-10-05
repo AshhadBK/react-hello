@@ -78,7 +78,8 @@ import ReactDOM from "react-dom";
 function IsValid(){
     let valid = true;
     return(
-        <h1>{valid ? 'is valid' : 'is not valid'}</h1>
+        <h1>{/*valid ? 'is valid' : 'is not valid'*/}</h1>  
+        /*Comments inside JSX are done as above. JS code is present inside single curl braces. */
     );
 }
 
