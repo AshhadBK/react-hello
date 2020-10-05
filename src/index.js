@@ -59,14 +59,30 @@ import ReactDOM from "react-dom";
 // Real JS "expressions" can be inserted inside JSX code
 // Expressions are those which priduces a value.
 // Statements are those which don't produce a value. Therefore, they can't be used in JSX code.
-function SubmitButton(){
-    const buttonLabel = "Submit";
+// function SubmitButton(){
+//     const buttonLabel = "Submit";
+//     return(
+//         <button>{buttonLabel}</button>
+//     );
+// }
+
+// ReactDOM.render(
+//     <SubmitButton/>,
+//     document.querySelector("#root")
+// )
+
+// Conditionals in JSX
+
+// Ternary Operator:
+
+function IsValid(){
+    let valid = true;
     return(
-        <button>{buttonLabel}</button>
+        <h1>{valid ? 'is valid' : 'is not valid'}</h1>
     );
 }
 
 ReactDOM.render(
-    <SubmitButton/>,
+    <IsValid/>,
     document.querySelector("#root")
 )
