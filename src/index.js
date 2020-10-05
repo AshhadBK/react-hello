@@ -25,33 +25,48 @@ import ReactDOM from "react-dom";
 // 
 
 //Fragments Example:
-function HelloWorld(){
-return(
-<>
-    <Hello/>
-    <World/>
-    !
-</>
+// function HelloWorld(){
+// return(
+// <>
+//     <Hello/>
+//     <World/>
+//     !
+// </>
 
-)
+// )
 
-}
+// }
 
 
-function Hello(){
+// function Hello(){
+//     return(
+//         <span>Hello</span>
+//     );
+// }
+
+// function World(){
+//     return(
+//         <span> World</span>
+//     );
+// }
+
+
+// ReactDOM.render(
+//     <HelloWorld/>,
+//     document.querySelector('#root')
+// );
+
+// Real JS "expressions" can be inserted inside JSX code
+// Expressions are those which priduces a value.
+// Statements are those which don't produce a value. Therefore, they can't be used in JSX code.
+function SubmitButton(){
+    const buttonLabel = "Submit";
     return(
-        <span>Hello</span>
+        <button>{buttonLabel}</button>
     );
 }
-
-function World(){
-    return(
-        <span> World</span>
-    );
-}
-
 
 ReactDOM.render(
-    <HelloWorld/>,
-    document.querySelector('#root')
-);
+    <SubmitButton/>,
+    document.querySelector("#root")
+)
